@@ -5,26 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ativ.forms</title>
     <style>
-        #toggle {
-            display: none;
-        }
         .botao {
             display: inline-block;
             padding: 10px 20px;
             background-color: #007bff;
             color: white;
-            cursor: pointer;
+            text-decoration: none;
             border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
         }
 
-        #texto {
-            display: none;
-            margin-top: 10px;
-            color: green;
-        }
-
-        #toggle:checked ~ #texto {
-            display: block;
+        .botao:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -41,12 +34,9 @@
         <input type="date" id="birthday" name="birthday" required><br>
         <input type="checkbox" id="Termo" name="Termo" value="" required>
         <label for="Termo"> Eu concordo com os termos de serviço</label><br><br>
-        <input type="submit" id="toggle">
-        <label for="toggle" class="botao">Enviar</label>
-
-        <div id="texto">
-            Usuario Cadastrado
-        </div>
+        <input type="submit" value="Submit">
     </form>
+    <br><br>
+    <a href="ativ2.html" class="botao">Ir para o formulario de reserva de sala</a>
 </body>
 </html>
